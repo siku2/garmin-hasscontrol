@@ -4,7 +4,8 @@
         <!-- <property id="port" type="number">443</property> -->
         <property id="accessToken" type="string"></property>
         <property id="scenes" type="string"></property>
-        <property id="group" type="string"></property>
+        <property id="group" type="string">Garmin</property>
+        <property id="refresh" type="boolean"></property>
     </properties>
 
     <strings>
