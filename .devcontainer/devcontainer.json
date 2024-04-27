@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+    "name": "Connect IQ SDK",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "foxundermoon.shell-format",
+                "garmin.monkey-c",
+                "timonwong.shellcheck",
+            ]
+        }
+    }
+}
