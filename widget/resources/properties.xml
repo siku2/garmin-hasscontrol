@@ -6,6 +6,7 @@
         <property id="scenes" type="string"></property>
         <property id="group" type="string">Garmin</property>
         <property id="refresh" type="boolean"></property>
+        <property id="report_battery_id" type="string"></property>
     </properties>
 
     <strings>
@@ -15,6 +16,7 @@
        <string id="scenes_title">Scenes: (scene1,scene2,scene3)</string>
        <string id="group_title">Group: (Group used for importing entities)</string>
        <string id="refresh_title">Refresh on show (uses more battery and network)</string>
+       <string id="report_battery_title">Entity ID to report battery level on startup (off if empty)</string>
     </strings>
 
     <settings>
@@ -35,6 +37,9 @@
         </setting>
         <setting propertyKey="@Properties.refresh" title="@Strings.refresh_title">
             <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.report_battery_id" title="@Strings.report_battery_title">
+            <settingConfig type="alphaNumeric" />
         </setting>
     </settings>
 </resources>
