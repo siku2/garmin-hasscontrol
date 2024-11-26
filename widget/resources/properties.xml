@@ -7,6 +7,8 @@
         <property id="group" type="string">Garmin</property>
         <property id="refresh" type="boolean"></property>
         <property id="report_battery_id" type="string"></property>
+        <property id="additional_header_key" type="string"></property>
+        <property id="additional_header_value" type="string"></property>
     </properties>
 
     <strings>
@@ -17,6 +19,8 @@
        <string id="group_title">Group: (Group used for importing entities)</string>
        <string id="refresh_title">Refresh on show (uses more battery and network)</string>
        <string id="report_battery_title">Entity ID to report battery level on startup (off if empty)</string>
+       <string id="additional_header_key_title">Additional HTTP(S) Header - Key</string>
+       <string id="additional_header_value_title">Additional HTTP(S) Header - Value</string>
     </strings>
 
     <settings>
@@ -39,6 +43,12 @@
             <settingConfig type="boolean" />
         </setting>
         <setting propertyKey="@Properties.report_battery_id" title="@Strings.report_battery_title">
+            <settingConfig type="alphaNumeric" />
+        </setting>
+        <setting propertyKey="@Properties.additional_header_key" title="@Strings.additional_header_key_title">
+            <settingConfig type="alphaNumeric" />
+        </setting>
+        <setting propertyKey="@Properties.additional_header_value" title="@Strings.additional_header_value_title">
             <settingConfig type="alphaNumeric" />
         </setting>
     </settings>
